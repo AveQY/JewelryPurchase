@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.personCenter.PersonCenterFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:background="@drawable/person_center_bg"
+            android:gravity="bottom">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginLeft="-1dp"
+                android:layout_marginRight="-1dp"
+                android:layout_marginBottom="-17dp"
+                android:background="@color/white"
+                app:cardCornerRadius="25dp">
+
+                <LinearLayout
+                    android:id="@+id/user_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="8dp"
+                    android:background="@color/white"
+                    android:gravity="center|left"
+                    android:onClick="clickInformation"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/loginIcon"
+                        android:layout_width="62dp"
+                        android:layout_height="62dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:onClick="clickLoginIcon"
+                        app:cardCornerRadius="50dp">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/user_default" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/Personal_Center_Username"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center|left|top"
+                            android:maxLines="1"
+                            android:text="@string/login_default"
+                            android:textColor="@color/black"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/Personal_Center_Login_status"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center|left|top"
+                            android:maxLines="1"
+                            android:text="@string/login_toast_default"
+                            android:textColor="@color/grey"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <ImageView style="@style/img_arrow"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/homeTopItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!--横向小部件-->
+            <LinearLayout
+                android:id="@+id/Shipping_address"
+                style="@style/home_components">
+
+                <ImageView
+                    style="@style/home_components_img"
+                    android:src="@drawable/map" />
+
+                <TextView
+                    style="@style/home_components_text"
+                    android:text="@string/myaddress" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/order_manage"
+                style="@style/home_components">
+
+                <ImageView
+                    style="@style/home_components_img"
+                    android:src="@drawable/order" />
+
+                <TextView
+                    style="@style/home_components_text"
+                    android:text="@string/myorder" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/aboutAppMessage"
+                style="@style/home_components">
+
+                <ImageView
+                    style="@style/home_components_img"
+                    android:src="@drawable/audit" />
+
+                <TextView
+                    style="@style/home_components_text"
+                    android:text="@string/about" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/outLoginBtu"
+                style="@style/home_components">
+
+                <ImageView
+                    style="@style/home_components_img"
+                    android:src="@drawable/take_off" />
+
+                <TextView
+                    style="@style/home_components_text"
+                    android:text="@string/logOut" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/personCenterWalletP"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center|left"
+                    android:maxLines="1"
+                    android:text="@string/myWallet"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:maxLines="1"
+                    android:text="114514"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center|left"
+                    android:maxLines="1"
+                    android:text="@string/myWalletRecharge"
+                    android:textColor="@color/red"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginEnd="20dp"
+                    android:gravity="center|left"
+                    android:maxLines="1"
+                    android:text="@string/myWalletWithdrawal"
+                    android:textColor="@color/blue"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/goods_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="50dp"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="2" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

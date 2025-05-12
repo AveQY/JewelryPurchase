@@ -1,0 +1,66 @@
+<!-- res/layout/activity_main.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 搜索框 -->
+    <LinearLayout
+        android:id="@+id/search_top_Linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#f5f5f5"
+        android:padding="0dp">
+
+        <!--返回按钮-->
+        <ImageView
+            android:id="@+id/cBack"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/baseline_arrow_back_24" />
+
+        <TextView
+            android:id="@+id/searchText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/search_edit_text_background"
+            android:hint="@string/home_search"
+            android:imeOptions="actionSearch"
+            android:padding="10dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <!-- 左侧分类列表 -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/categoryList"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="#f5f5f5" />
+
+        <TextView
+            android:id="@+id/goodsIsNull"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="16sp"
+            android:text="@string/goods_is_null"
+            android:visibility="gone"
+            android:gravity="center"/>
+
+        <!-- 右侧商品列表 -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/productGrid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp" />
+
+    </LinearLayout>
+</LinearLayout>

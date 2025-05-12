@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.AuctionDetail">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/auctionDetailImg"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:background="@color/grey"
+                android:scaleType="centerCrop" />
+
+            <!-- 标题 -->
+            <TextView
+                android:id="@+id/auctionDetailTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="16dp"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- 参数列表 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:dividerPadding="8dp"
+                android:orientation="vertical"
+                android:showDividers="middle">
+
+                <!-- 描述 -->
+                <TextView
+                    android:id="@+id/auctionDetailD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="描述："
+                    android:textColor="#333"
+                    android:textSize="16sp" />
+
+                <!-- 尺寸 -->
+                <TextView
+                    android:id="@+id/auctionDetailG"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="尺寸："
+                    android:textColor="#666"
+                    android:textSize="16sp" />
+
+                <!-- 估价 -->
+                <TextView
+                    android:id="@+id/auctionDetailP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="估价：RMB "
+                    android:textColor="#666"
+                    android:textSize="16sp" />
+
+                <!-- 成交价 -->
+                <TextView
+                    android:id="@+id/auctionDetailRP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="成交价：RMB "
+                    android:textColor="#E91E63"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <!-- 分类 -->
+                <TextView
+                    android:id="@+id/auctionDetailQ"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="分类："
+                    android:textColor="#666"
+                    android:textSize="16sp" />
+
+                <!-- 拍卖日期 -->
+                <TextView
+                    android:id="@+id/auctionDetailT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="拍卖日期："
+                    android:textColor="#666"
+                    android:textSize="16sp" />
+
+                <!-- 送拍人 -->
+                <TextView
+                    android:id="@+id/auctionDetailH"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="送拍人："
+                    android:textColor="#666"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/auctionDetailBack"
+        style="@style/goods_message_btu"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            style="@style/goods_message_btuText"
+            android:layout_margin="5dp"
+            android:background="@drawable/search_edit_text_background"
+            android:text="返回"
+            android:textColor="@color/black" />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

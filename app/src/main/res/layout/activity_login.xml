@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.personCenter.LoginActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/login_bg" />
+
+    <!-- 标题 -->
+    <TextView
+        android:id="@+id/loginTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/login"
+        android:textColor="@color/brown"
+        android:textSize="38sp"
+        android:textStyle="bold" />
+
+    <!--用户名输入框-->
+    <EditText
+        android:id="@+id/loginUserEditText"
+        style="@style/login_edit"
+        android:layout_below="@id/loginTitle"
+        android:background="@drawable/search_edit_text_background"
+        android:hint="@string/login_username_hint"
+        android:maxLength="8"
+        android:paddingStart="22dp"
+        android:paddingEnd="22sp" />
+
+    <!--密码输入框-->
+    <EditText
+        android:id="@+id/loginPasswordEditText"
+        style="@style/login_edit"
+        android:layout_below="@id/loginUserEditText"
+        android:background="@drawable/search_edit_text_background"
+        android:hint="@string/login_password_hint"
+        android:inputType="textPassword"
+        android:maxLength="16"
+        android:paddingStart="22dp"
+        android:paddingEnd="22sp" />
+
+    <!-- 邮箱输入框（改成手机号了） -->
+    <EditText
+        android:id="@+id/emailEditText"
+        style="@style/login_edit"
+        android:layout_below="@id/loginPasswordEditText"
+        android:background="@drawable/search_edit_text_background"
+        android:hint="@string/login_emaill_hint"
+        android:inputType="number"
+        android:maxLength="11"
+        android:paddingStart="22dp"
+        android:paddingEnd="22sp" />
+
+    <LinearLayout
+        android:id="@+id/login_checkId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailEditText"
+        android:orientation="horizontal">
+
+        <EditText
+            style="@style/login_edit"
+            android:layout_marginEnd="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/search_edit_text_background"
+            android:hint="测试阶段暂不需验证码"
+            android:inputType="number"
+            android:maxLength="6"
+            android:paddingStart="22dp"
+            android:paddingEnd="22sp" />
+
+        <TextView
+            style="@style/login_edit"
+            android:layout_width="wrap_content"
+            android:background="@drawable/search_edit_text_background"
+            android:gravity="center"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:text="@string/login_getCode"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <!-- 登录按钮 -->
+    <TextView
+        android:id="@+id/loginButton"
+        style="@style/login_edit"
+        android:layout_below="@id/login_checkId"
+        android:background="@drawable/search_edit_text_background"
+        android:gravity="center"
+        android:text="@string/login"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <!-- 提示信息 -->
+    <TextView
+        android:id="@+id/autoRegisterInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:text="@string/no_login_hint"
+        android:textColor="@color/grey"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/autoRegisterInfo"
+        android:layout_margin="10dp"
+        android:gravity="center|left"
+        android:orientation="horizontal">
+
+        <!-- 同意协议复选框 -->
+        <CheckBox
+            android:id="@+id/login_agreement_CheckBox"
+            android:layout_width="30dp"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:gravity="center"
+            android:text="@string/login_agree"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:gravity="center"
+            android:onClick="clickLoginTerms"
+            android:text="@string/login_Terms"
+            android:textColor="@color/purple_500" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:gravity="center"
+            android:text="和"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:gravity="center"
+            android:onClick="clickUseProtocol"
+            android:text="@string/login_Conditions"
+            android:textColor="@color/purple_500" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

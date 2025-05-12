@@ -1,0 +1,117 @@
+<resources>
+    <string name="app_name">珠宝购</string>
+    <string name="title_home">主页</string>
+    <string name="title_dashboard">购物车</string>
+    <string name="title_inventory">库存</string>
+    <string name="title_message">客服</string>
+    <string name="title_notifications">我的</string>
+
+    <!--    主页-->
+    <string name="home_search">搜索你想要的商品</string>
+    <string name="components_1">珠宝拍卖</string>
+    <string name="components_2">珠宝出租</string>
+    <string name="components_3">商品分类</string>
+    <string name="components_4">更多功能</string>
+    <string name="home_recommend">热门推荐</string>
+    <string name="home_goodsIsNull">暂未找到商品~</string>
+
+    <!--    搜索-->
+    <string name="search_bottom">搜索</string>
+    <string name="search_hint">搜索你想要的宝贝</string>
+    <string name="search_historyResult">搜索历史</string>
+    <string name="search_historyDelete">清除</string>
+    <string name="search_ResultNull">什么也没找到~</string>
+
+    <!--    购物车-->
+    <string name="dashboard_title"><b>购物车</b></string>
+    <string name="all_select">全选</string>
+    <string name="dashboard_allMoney">合计:</string>
+    <string name="dashboard_playMoney">结算</string>
+    <string name="dashboard_allplayMoney">0.00</string>
+
+    <!--    库存-->
+    <string name="inventoryListEdit">编辑</string>
+    <string name="inventoryListEditup">发布</string>
+    <string name="inventoryListEditType">分类</string>
+    <string name="inventoryListEditprice">价格</string>
+    <string name="inventoryListEditI">库存</string>
+    <string name="inventoryCurrency">￥</string>
+    <string name="inventoryDnametext">请输入宝贝名称</string>
+    <string name="inventoryDtext">请描述一下宝贝~</string>
+    <string name="inventoryImgtext">+ 添加\n更多细节</string>
+
+    <!--    个人中心-->
+    <string name="login_default">未登录</string>
+    <string name="login_toast_default">点击头像登录</string>
+    <string name="setting">设置</string>
+    <string name="myaddress">地址管理</string>
+    <string name="history_buy">历史浏览</string>
+    <string name="myorder">我的订单</string>
+    <string name="about">关于软件</string>
+    <string name="logOut">退出登录</string>
+    <string name="myWallet">晶钻币：</string>
+    <string name="myWalletWithdrawal">提现</string>
+    <string name="myWalletRecharge">充值</string>
+
+    <!--    关于软件-->
+    <string name="check_updata">检查更新</string>
+    <string name="up_bug">帮助与反馈</string>
+
+    <!-- 登录-->
+    <string name="login">登录和注册</string>
+    <string name="login_emaill_hint">手机号</string>
+    <string name="login_password_hint">密码</string>
+    <string name="login_username_hint">用户名</string>
+    <string name="login_getCode">获取验证码</string>
+    <string name="no_login_hint">没有账号？将自动注册账号</string>
+    <string name="login_agree">我已阅读并同意</string>
+    <string name="login_Conditions"><u>《用户协议》</u></string>
+    <string name="login_Terms"><u>《隐私政策》</u></string>
+
+    <!--商品-->
+    <string name="currency">￥</string>
+    <string name="goods_buyBtu">立即购买</string>
+    <string name="goods_reallyBuyBtu">加入购物车</string>
+    <string name="grid_goodsInventory">库存</string>
+    <string name="grid_goodsMessage">联系商家</string>
+
+    <!-- 拍卖-->
+    <string name="auction_title"><b>珠宝购拍卖会</b></string>
+    <string name="auction_username">用户名称</string>
+    <string name="auction_onclickBtu">点击参拍</string>
+
+    <!-- 分类-->
+    <string name="goods_is_null"><b>未找到此类珠宝~</b></string>
+
+    <!-- 地址管理-->
+    <string name="myAddress_manage"><b>地址管理</b></string>
+    <string name="addAddress"><b>新增地址</b></string>
+    <string name="saveAddress">保存</string>
+    <string name="addressUser">收货人</string>
+    <string name="addressUserHint">请输入收货人姓名</string>
+    <string name="addressPhone">手机号</string>
+    <string name="addressPhoneHint">+86 请输入收货手机号</string>
+    <string name="selectAddress">选择地区</string>
+    <string name="accurateAddress">详细地址：</string>
+    <string name="accurateAddressHint">如街道、门牌号、小区、乡镇、村等</string>
+
+    <!-- 订单管理-->
+    <string name="order_manage_title"><b>订单管理</b></string>
+    <string name="order_manage_really_payText">实付款</string>
+    <string name="order_manage_money_symbol">¥</string>
+    <string name="order_details">查看详细</string>
+    <string name="order_delete">删除订单</string>
+
+    <!-- 订单-->
+    <string name="myOrder_manage"><b>订单详细</b></string>
+    <string name="myOrder_status">支付状态</string>
+    <string name="myOrder_Paid_in">单价：</string>
+    <string name="myOrder_modify">修改</string>
+    <string name="myOrder_text1">订单编号：</string>
+    <string name="myOrder_text2">下单时间：</string>
+    <string name="myOrder_wechat">微信支付</string>
+    <string name="myOrder_play">支付宝</string>
+    <string name="myOrder_bottomBtu">取消订单</string>
+    <string name="myOrder_pay">去支付</string>
+
+</resources>
