@@ -228,7 +228,7 @@ return BASE_URL;
 
 当前 README 中保留了 APK 下载地址：
 
-- [app-releaseV1.0.5.apk](http://aweqy.asia/alist/d/Linux/root/JewelryPurchaseWeb/app-releaseV1.0.5.apk?sign=iMh2KV_UH8Il1Q8_T2WGsby1ODpfPkRE4noPratR8-A=:0)
+- [app-releaseV1.0.5.apk](https://github.com/AveQY/JewelryPurchase/releases/download/V1.0.5/app-release.apk)
 
 ## 适合谁看
 
